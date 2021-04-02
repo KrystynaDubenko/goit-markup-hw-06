@@ -969,7 +969,7 @@ section {
     margin-right: 8px;
 }
 .modal-checkbox-term:checked + .modal-check::before {
-    background-image: url(../images.img/checked.jpg);
+    background-image: url(../images.img/Vector.jpg);
     background-position: center;
 }
 .modal-checkbox-term:focus + .modal-check::before {
