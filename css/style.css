@@ -772,8 +772,6 @@ section {
 .follow-wrapper {
     position: relative;
     display: flex;
-    width: 358px;
-    height: 50px;
 }
 .mail-mark {
     position: absolute;
@@ -786,7 +784,8 @@ section {
     line-height: 1.25;
 }
 .mail-follower {
-    width: 100%;
+    width: 358px;
+    height: 50px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -796,8 +795,10 @@ section {
     color: var(--standart-color);
 }
 .follow-btn {
+    position: relative;
     width: 200px;
     margin-left: 12px;
+    padding-left: 29px;
 
     font-family: var(--main-font);
     font-weight: bold;
@@ -816,9 +817,14 @@ section {
     border-radius: 4px;
 }
 .follow-icon {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+
     fill: var(--standart-color);
     margin-left: 10px;
-    padding-right: 13px;
+    
 }
 /*===========End Footer================ */
 
@@ -885,9 +891,7 @@ section {
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-bottom: 12px;
 
     color: var(--main-text-color);
 }
@@ -969,11 +973,14 @@ section {
     margin-right: 8px;
 }
 .modal-checkbox-term:checked + .modal-check::before {
-    background-image: url(../images.img/Vector.jpg);
+    background-image: url(../images.img/vector.svg);
     background-position: center;
 }
 .modal-checkbox-term:focus + .modal-check::before {
     background-color: var(--focus-color);
+}
+.modal-term-link {
+    color: var(--focus-color);
 }
 .modal-term-link:hover {
     color: var(--focus-color);
